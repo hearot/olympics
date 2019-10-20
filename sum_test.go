@@ -27,7 +27,7 @@ func ExampleOddsSummation() {
 }
 
 func TestEvensSummation(t *testing.T) {
-	if sum := EvensSummation(10100); sum != gaussResult {
+	if sum := EvensSummation(100); sum != gaussResult {
 		t.Errorf("EvensSummation(100) should have returned %d, not %d", evensResult, sum)
 	}
 }
