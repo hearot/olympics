@@ -28,6 +28,6 @@ func ExamplePow_sum() {
 
 func TestPow(t *testing.T) {
 	if res := Pow(2, 4000, 100000); res != result {
-		t.Errorf("Pow(2, 4000, 100000) should return %d, but returned %d", result, res)
+		t.Errorf("Pow(2, 4000, 100000) should have returned %d, not %d", result, res)
 	}
 }
