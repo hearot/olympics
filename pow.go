@@ -11,7 +11,7 @@ func Pow(a int, b int, modulo int) int {
 	res := Pow(a, b/2, modulo)
 	res = (res * res) % modulo
 
-	if b % 2 == 1 {
+	if b%2 == 1 {
 		res = (res * a) % modulo
 	}
 
